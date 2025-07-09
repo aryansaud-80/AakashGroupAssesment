@@ -23,20 +23,20 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`sticky top-0 z-50 transition-all duration-300 flex justify-between items-center p-4 ${
+        className={`sticky top-0 z-50 transition-all duration-300 flex justify-between items-center p-4 px-10  ${
           scrolled
             ? 'bg-white/95 backdrop-blur-md shadow-md'
             : 'bg-white/90 backdrop-blur-sm'
         }`}
       >
-        <div className='flex text-2xl font-bold'>
+        <div className='flex text-2xl font-bold text-gray-700'>
           <p>
             Aakash
             <span className='text-blue-700'>Labs</span>
           </p>
         </div>
 
-        <div className='gap-10 text-lg hidden md:flex'>
+        <div className='gap-10 text-lg hidden sm:flex'>
           {navItems.map((item) => (
             <a
               href={item.href}
@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className='md:hidden cursor-pointer'
+          className='sm:hidden cursor-pointer'
           onClick={() => setOpen(!open)}
         >
           {open ? <RxCross1 size={24} /> : <RxHamburgerMenu size={24} />}
@@ -59,8 +59,8 @@ const Navbar = () => {
 
       {open && (
         <div
-          className={`fixed top-16 right-0 w-2/5 h-screen shadow flex flex-col gap-5 p-6 transition-all -translate-x-full transform duration-300 z-40 md:hidden text-lg font-medium ${
-            open && 'translate-x-0'
+          className={`fixed top-16 right-0 w-2/4  h-screen shadow flex flex-col gap-5 p-6 transform transition-transform duration-300 z-40 sm:hidden text-lg font-medium ${
+            open ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
           {navItems.map((item) => (
