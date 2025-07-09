@@ -1,6 +1,10 @@
+import Navbar from '../components/Navbar';
+
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
-export default Home
+    <div className='flex flex-col gap-10'>
+      <Navbar />
+    </div>
+  );
+};
+export default Home;
