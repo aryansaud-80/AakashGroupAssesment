@@ -1,6 +1,5 @@
-// src/pages/ErrorPage.jsx
 import { BsArrowLeft } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 const ErrorPage = () => {
   return (
