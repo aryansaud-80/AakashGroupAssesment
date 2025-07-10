@@ -1,8 +1,8 @@
-const FeatureCard = ({ icon, label, detail, classname }) => {
+const FeatureCard = ({ icon, label, detail, className }) => {
   return (
     <div className='bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 h-full group '>
       <div
-        className={`inline-flex p-3 rounded-xl mb-6 border ${classname} group-hover:scale-110 transition-transform duration-200`}
+        className={`inline-flex p-3 rounded-xl mb-6 border ${className} group-hover:scale-110 transition-transform duration-200`}
       >
         {icon}
       </div>

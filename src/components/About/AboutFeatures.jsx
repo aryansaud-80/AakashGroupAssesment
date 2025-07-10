@@ -57,7 +57,7 @@ const AboutFeatures = () => {
             icon={feat.icon}
             label={feat.title}
             detail={feat.description}
-            classname={feat.className}
+            className={feat.className}
           />
         );
       })}
