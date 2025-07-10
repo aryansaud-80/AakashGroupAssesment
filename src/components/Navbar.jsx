@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`sticky top-0 z-50 transition-all duration-300 flex justify-between items-center p-4 px-10  ${
+        className={`sticky top-0 z-50 transition-all duration-300 flex justify-between items-center py-4 px-10  ${
           scrolled
             ? 'bg-white/95 backdrop-blur-md shadow-md'
             : 'bg-white/90 backdrop-blur-sm'
