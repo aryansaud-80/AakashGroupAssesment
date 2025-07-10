@@ -6,7 +6,7 @@ const TeamCard = () => {
     {
       name: 'Aakash Kumar',
       role: 'Founder & Lead Developer',
-      image: '/placeholder.svg?height=300&width=300',
+      image: '',
       bio: 'Full-stack developer with 5+ years of experience in React, Node.js, and cloud technologies.',
       skills: ['React', 'Node.js', 'AWS'],
       social: {
@@ -20,7 +20,7 @@ const TeamCard = () => {
     {
       name: 'Bikash Sharma',
       role: 'UI/UX Designer',
-      image: '/placeholder.svg?height=300&width=300',
+      image: '',
       bio: 'Creative designer from Pokhara crafting user-friendly interfaces with Figma and design systems.',
       skills: ['Figma', 'Design Systems', 'User Research'],
       social: {
@@ -33,7 +33,7 @@ const TeamCard = () => {
     {
       name: 'Pratiksha Thapa',
       role: 'Backend Developer',
-      image: '/placeholder.svg?height=300&width=300',
+      image: '',
       bio: 'Specialist in scalable backend APIs using Node.js and PostgreSQL. Passionate about clean architecture.',
       skills: ['Node.js', 'PostgreSQL', 'Docker'],
       social: {

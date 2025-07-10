@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+        <div className="border-t border-gray-400 pt-6 text-center text-sm text-gray-500">
           © {new Date().getFullYear()} Aakash Labs. Built with ❤️ in Nepal.
         </div>
       </div>

@@ -4,6 +4,8 @@ import Contact from '../components/Contact/Contact';
 import Navbar from '../components/Nav/Navbar';
 import Team from '../components/Team/Team';
 import Footer from '../components/Footer/Footer';
+import MoveToTop from '../components/MoveToTop';
+import HeroSlider from '../components/HeroSlider';
 
 const Home = () => {
   return (
@@ -21,12 +23,14 @@ const Home = () => {
         theme='light'
         transition={Bounce}
       />
-      <div className='flex flex-col gap-10'>
-        <Navbar />
+      <Navbar />
+      <div className='flex flex-col gap-10 relative'>
+        <HeroSlider />
         <AboutUs />
         <Team />
         <Contact />
         <Footer />
+        <MoveToTop />
       </div>
     </>
   );

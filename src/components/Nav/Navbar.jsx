@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
+import { Link } from 'react-router';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -40,17 +41,23 @@ const Navbar = () => {
           Aakash<span className='text-blue-700'>Labs</span>
         </div>
 
-        <div className='gap-10 text-lg hidden sm:flex'>
+        <div className='gap-10 text-lg hidden sm:flex text-gray-700 font-medium items-center'>
           {navItems.map((item) => (
             <a
               href={item.href}
               key={item.name}
-              className='text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium relative group'
+              className=' hover:text-blue-600 transition-colors duration-200  relative group'
             >
               {item.name}
               <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full'></span>
             </a>
           ))}
+
+          <Link to='api-page' >API Demo</Link>
+
+          <a href='#contact' className='bg-blue-500 text-white px-4 py-2 rounded-full'>
+            Get Started
+          </a>
         </div>
 
         <button
