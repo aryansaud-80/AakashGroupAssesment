@@ -49,12 +49,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='w-full md:w-1/2 bg-white p-8 shadow-xl rounded-2xl border border-gray-200 h-fit'>
+    <div className=' flex-1 bg-white p-8 shadow-xl rounded-2xl border border-gray-200 h-fit'>
       <form
-        className='grid grid-cols-1 md:grid-cols-2 gap-10'
+        className='grid gap-6 grid-cols-1 md:grid-cols-2'
         onSubmit={handleSubmit}
       >
-        <div className='flex flex-col'>
+        <div className='flex flex-col max-sm:w-full'>
           <label
             htmlFor='name'
             className='text-sm font-semibold text-gray-700 mb-1'
@@ -73,7 +73,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col max-sm:w-full'>
           <label
             htmlFor='email'
             className='text-sm font-semibold text-gray-700 mb-1'
@@ -92,7 +92,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col max-sm:w-full'>
           <label
             htmlFor='company'
             className='text-sm font-semibold text-gray-700 mb-1'
@@ -110,7 +110,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col max-sm:w-full'>
           <label
             htmlFor='subject'
             className='text-sm font-semibold text-gray-700 mb-1'
@@ -129,7 +129,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className='flex flex-col col-span-2'>
+        <div className='flex flex-col md:col-span-2 w-full'>
           <label
             htmlFor='message'
             className='text-sm font-semibold text-gray-700 mb-1'
@@ -150,9 +150,9 @@ const ContactForm = () => {
 
         <button
           type='submit'
-          className={`w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2 justify-center cursor-pointer mt-4 col-span-2 ${
+          className={`w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2 justify-center cursor-pointer mt-4 md:col-span-2 ${
             loading ? 'bg-gray-300' : ''
-          }`}
+          } `}
           disabled={loading}
         >
           {loading ? (

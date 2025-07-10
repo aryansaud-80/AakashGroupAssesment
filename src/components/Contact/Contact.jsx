@@ -9,7 +9,7 @@ const Contact = () => {
       id='contact'
     >
       <ContactHeader />
-      <div className='flex gap-10 flex-col md:flex-row'>
+      <div className='flex gap-10 flex-col lg:flex-row'>
         <ContactDetail />
         <ContactForm />
       </div>

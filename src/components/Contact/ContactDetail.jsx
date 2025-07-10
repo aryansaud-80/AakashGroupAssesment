@@ -32,7 +32,7 @@ const ContactDetail = () => {
     },
   ];
   return (
-    <div className='flex gap-6 flex-col md:w-1/2 w-full'>
+    <div className='flex gap-6 flex-col flex-1 '>
       <div className='flex flex-col gap-4'>
         <h3 className='text-4xl md:text-3xl font-bold text-gray-700'>
           Let's Connect
