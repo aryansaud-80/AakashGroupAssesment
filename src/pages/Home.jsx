@@ -3,6 +3,7 @@ import AboutUs from '../components/About/AboutUs';
 import Contact from '../components/Contact/Contact';
 import Navbar from '../components/Nav/Navbar';
 import Team from '../components/Team/Team';
+import Footer from '../components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
         <AboutUs />
         <Team />
         <Contact />
+        <Footer />
       </div>
     </>
   );
