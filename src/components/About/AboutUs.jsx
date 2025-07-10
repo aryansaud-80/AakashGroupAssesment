@@ -5,12 +5,15 @@ import AboutHeader from './AboutHeader';
 
 const AboutUs = () => {
   return (
-    <div className='px-4  py-6 flex flex-col gap-10 container m-auto '>
+    <section
+      className='px-4  py-6 flex flex-col gap-10 container m-auto '
+      id='about'
+    >
       <AboutHeader />
       <AboutStat />
       <AboutFeatures />
       <AboutCTA />
-    </div>
+    </section>
   );
 };
 

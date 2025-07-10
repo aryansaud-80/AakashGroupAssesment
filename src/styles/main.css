@@ -1,5 +1,13 @@
 @import 'tailwindcss';
 
-body{
+body {
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 66px;
 }

@@ -13,6 +13,13 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : 'auto';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [open]);
+
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
@@ -23,17 +30,14 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`sticky top-0 z-50 transition-all duration-300 flex justify-between items-center py-4 px-10  ${
+        className={`sticky top-0 z-50 transition-all duration-300 flex justify-between items-center py-4 px-6 sm:px-13 ${
           scrolled
             ? 'bg-white/95 backdrop-blur-md shadow-md'
             : 'bg-white/90 backdrop-blur-sm'
         }`}
       >
-        <div className='flex text-2xl font-bold text-gray-700'>
-          <p>
-            Aakash
-            <span className='text-blue-700'>Labs</span>
-          </p>
+        <div className='text-2xl font-bold text-gray-700'>
+          Aakash<span className='text-blue-700'>Labs</span>
         </div>
 
         <div className='gap-10 text-lg hidden sm:flex'>
@@ -49,32 +53,33 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div
+        <button
           className='sm:hidden cursor-pointer'
           onClick={() => setOpen(!open)}
+          aria-label='Toggle navigation menu'
         >
           {open ? <RxCross1 size={24} /> : <RxHamburgerMenu size={24} />}
-        </div>
+        </button>
       </div>
 
-      {open && (
-        <div
-          className={`fixed top-16 right-0 w-2/4  h-screen shadow flex flex-col gap-5 p-6 transform transition-transform duration-300 z-40 sm:hidden text-lg font-medium ${
-            open ? 'translate-x-0' : 'translate-x-full'
-          }`}
-        >
-          {navItems.map((item) => (
-            <a
-              href={item.href}
-              key={item.name}
-              onClick={() => setOpen(false)}
-              className='text-gray-800 hover:bg-blue-100 p-3 rounded-md'
-            >
-              {item.name}
-            </a>
-          ))}
-        </div>
-      )}
+      <div
+        className={`fixed top-16 right-0 w-2/3 h-screen bg-white shadow-md transform transition-all duration-300 z-40 sm:hidden text-lg font-medium flex flex-col gap-5 p-6 ${
+          open
+            ? 'translate-x-0 opacity-100'
+            : 'translate-x-full opacity-0 pointer-events-none'
+        }`}
+      >
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            key={item.name}
+            onClick={() => setOpen(false)}
+            className='text-gray-800 hover:bg-blue-100 p-3 rounded-md'
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
     </>
   );
 };

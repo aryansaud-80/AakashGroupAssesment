@@ -10,9 +10,9 @@ const AboutHeader = () => {
         <span className='text-blue-700'>SaaS Solutions</span>
       </h2>
 
-      <p className='text-gray-500 text-xl text-center max-w-2xl'>
+      <p className='text-gray-500 text-xl text-center'>
         We're a passionate team of developers, designers, and strategists
-        dedicated to creating innovative SaaS applications that transform
+        dedicated to <br /> creating innovative SaaS applications that transform
         businesses and delight users.
       </p>
     </div>
