@@ -20,7 +20,7 @@ export default function Footer() {
             <a href='#' className='text-2xl font-bold text-gray-700'>
               Aakash<span className='text-blue-700'>Labs</span>
             </a>
-            <p className='text-gray-400 text-sm max-w-sm'>
+            <p className='text-gray-600 text-sm max-w-sm'>
               Building innovative SaaS solutions that transform businesses and
               create exceptional user experiences.
             </p>
@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div>
             <h3 className='text-lg font-semibold mb-4'>Quick Links</h3>
-            <ul className='space-y-2 text-sm text-gray-400'>
+            <ul className='space-y-2 text-sm text-gray-600'>
               <li>
                 <a href='#'>Home</a>
               </li>
@@ -62,22 +62,22 @@ export default function Footer() {
 
           <div className='space-y-4'>
             <h3 className='text-lg font-semibold'>Contact</h3>
-            <div className='flex items-center space-x-2 text-gray-400'>
+            <div className='flex items-center space-x-2 text-gray-600'>
               <IoMail className='text-blue-400' />
               <span>hello@akashlabs.com</span>
             </div>
-            <div className='flex items-center space-x-2 text-gray-400'>
+            <div className='flex items-center space-x-2 text-gray-600'>
               <BiPhone className='text-blue-400' />
               <span>+977-9801903813</span>
             </div>
-            <div className='flex items-center space-x-2 text-gray-400'>
+            <div className='flex items-center space-x-2 text-gray-600'>
               <BiMapPin className='text-blue-400' />
               <span>Putali Sadak, Kathmandu, Nepal</span>
             </div>
           </div>
         </div>
 
-        <div className='border-t border-gray-400 pt-6 text-center text-sm text-gray-500'>
+        <div className='border-t border-gray-600 pt-6 text-center text-sm text-gray-600'>
           © {new Date().getFullYear()} Aakash Labs. Built with ❤️ in Nepal.
         </div>
       </div>

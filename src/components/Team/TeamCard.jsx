@@ -1,12 +1,15 @@
 import UserCard from '../UserCard';
 import aryanImg from '../../assets/aryan.jpeg';
+import safalImg from '../../assets/safal.jpeg';
+import yogeshImg from '../../assets/yogesh.jpeg';
+import pratikshaImg from '../../assets/pratiksha.jpeg';
 
 const TeamCard = () => {
   const teamMembers = [
     {
-      name: 'Aakash Kumar',
+      name: 'Safal Shyangwa',
       role: 'Founder & Lead Developer',
-      image: 'hhh',
+      image: safalImg,
       bio: 'Full-stack developer with 5+ years of experience in React, Node.js, and cloud technologies.',
       skills: ['React', 'Node.js', 'AWS'],
       social: {
@@ -18,9 +21,9 @@ const TeamCard = () => {
     },
 
     {
-      name: 'Bikash Sharma',
+      name: 'Yogesh Shah',
       role: 'UI/UX Designer',
-      image: 'jjj',
+      image: yogeshImg,
       bio: 'Creative designer from Pokhara crafting user-friendly interfaces with Figma and design systems.',
       skills: ['Figma', 'Design Systems', 'User Research'],
       social: {
@@ -33,7 +36,7 @@ const TeamCard = () => {
     {
       name: 'Pratiksha Thapa',
       role: 'Backend Developer',
-      image: 'kkk',
+      image: pratikshaImg,
       bio: 'Specialist in scalable backend APIs using Node.js and PostgreSQL. Passionate about clean architecture.',
       skills: ['Node.js', 'PostgreSQL', 'Docker'],
       social: {
