@@ -25,7 +25,7 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Team', href: '#team' },
     { name: 'Contact', href: '#contact' },
-    { name: 'Anime', href: 'anime' },
+    { name: 'Api Demo', href: 'anime' },
   ];
 
   return (
@@ -37,9 +37,9 @@ const Navbar = () => {
             : 'bg-white/90 backdrop-blur-sm'
         }`}
       >
-        <div className='text-2xl font-bold text-gray-700'>
+        <a to='#' className='text-2xl font-bold text-gray-700'>
           Aakash<span className='text-blue-700'>Labs</span>
-        </div>
+        </a>
 
         <div className='gap-6 text-lg hidden md:flex text-gray-700 font-medium items-center'>
           {navItems.map((item) => (
