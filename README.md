@@ -145,6 +145,6 @@ Aryan Saud — Frontend Developer & MERN Stack Enthusiast
 
 - [🔗 GitHub: @aryansaud-80](https://github.com/aryansaud-80)
 
-- [🔗 LinkedIn: @aryan-saud-81a618293](https://github.com/aryansaud-80)
+- [🔗 LinkedIn: @aryan-saud-81a618293](https://www.linkedin.com/in/aryan-saud-81a618293)
 
 - [📧 work.aryansaud@gmail.com](mailto:work.aryansaud@gmail.com)
