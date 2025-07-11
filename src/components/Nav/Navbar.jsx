@@ -37,7 +37,7 @@ const Navbar = () => {
             : 'bg-white/90 backdrop-blur-sm'
         }`}
       >
-        <a to='#' className='text-2xl font-bold text-gray-700'>
+        <a href='#' className='text-2xl font-bold text-gray-700 cursor'>
           Aakash<span className='text-blue-700'>Labs</span>
         </a>
 
